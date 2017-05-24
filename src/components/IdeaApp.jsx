@@ -5,7 +5,7 @@ export default class IdeaApp extends React.Component {
     render() {
         return <div>
             <section className="todoapp">
-                <IdeaList ideas={this.props.ideas} />
+                <IdeaList ideas={this.props.ideas} filter={this.props.filter}/>
             </section>
         </div>
     }

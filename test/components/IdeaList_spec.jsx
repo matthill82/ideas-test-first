@@ -37,14 +37,14 @@ describe('IdeaList', () => {
         );
         const filter = 'completed';
         const component = renderIntoDocument(
-            <IdeaList filter={filter} ideas={ideas} />
+            <IdeaList filter={filter} ideas={ideas}/>
         );
         const items = scryRenderedDOMComponentsWithTag(component, 'li');
 
         expect(items.length).to.equal(1);
         expect(items[0].textContent).to.contain('Immutable');
     });
-    
+
     it('renders a list with all the items', () => {
         const ideas = List.of(
             Map({id: 1, text: 'React', status: 'active'}),

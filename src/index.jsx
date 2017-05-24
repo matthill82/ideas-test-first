@@ -16,9 +16,11 @@ const ideas = List.of(
     Map({id: 3, text: 'Immutable', status: 'completed', editing: false})
 );
 
+const filter = 'all';
+
 require('../node_modules/todomvc-app-css/index.css');
 
 ReactDOM.render(
-    <IdeaApp ideas={ideas} />,
+    <IdeaApp ideas={ideas} filter={filter} />,
     document.getElementById('app')
 );

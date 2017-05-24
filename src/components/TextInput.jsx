@@ -9,9 +9,10 @@ export default class TextInput extends React.Component {
         super(props);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
+
     render() {
-        return (<input className="edit"
-                      autoFocus={true}
-                      type="text" />)
+        return <input className="edit"
+                       autoFocus={true}
+                       type="text"/>
     }
 };
